@@ -5,6 +5,5 @@ tasks:
   - name: Setup Flutter
     init: |
       git clone https://github.com/flutter/flutter.git -b stable
-      echo 'export PATH="$PATH:/workspace/flutter/bin"' >> ~/.bashrc
-      source ~/.bashrc
+      export PATH="$PATH:/workspace/flutter/bin"
       flutter doctor
